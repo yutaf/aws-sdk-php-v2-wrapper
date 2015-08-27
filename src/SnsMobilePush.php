@@ -3,6 +3,8 @@
 /**
  * Class SnsMobilePush
  */
+namespace Yutaf\Aws;
+
 class SnsMobilePush
 {
     private $sns;
