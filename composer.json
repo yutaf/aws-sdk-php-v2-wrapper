@@ -1,0 +1,14 @@
+{
+    "name": "yutaf/aws-sdk-php-v2-wrapper",
+    "license": "MIT",
+    "description": "aws-sdk-php v2 wrapper library",
+    "require": {
+      "php": ">=5.3.3",
+      "aws/aws-sdk-php": ">=2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yutaf\\Aws\\": "src/"
+        }
+    }
+}
