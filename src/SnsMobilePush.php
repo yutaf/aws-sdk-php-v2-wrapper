@@ -4,6 +4,7 @@
  * Class SnsMobilePush
  */
 namespace Yutaf\Aws;
+use Aws\Sns;
 
 class SnsMobilePush
 {
@@ -14,7 +15,7 @@ class SnsMobilePush
      *
      * @param \Aws\Sns\SnsClient $sns
      */
-    public function __construct(\Aws\Sns\SnsClient $sns)
+    public function __construct(Sns\SnsClient $sns)
     {
         $this->sns = $sns;
     }
