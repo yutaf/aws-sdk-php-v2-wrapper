@@ -10,17 +10,11 @@ class SnsMobilePush
     /**
      * コンストラクタ
      *
-     * @param $key
-     * @param $secret
-     * @param $region
+     * @param \Aws\Sns\SnsClient $sns
      */
-    public function __construct($key, $secret, $region)
+    public function __construct(\Aws\Sns\SnsClient $sns)
     {
-        $this->sns = \Aws\Sns\SnsClient::factory(array(
-            'key'       => $key,
-            'secret'    => $secret,
-            'region'    => $region,
-        ));
+        $this->sns = $sns;
     }
 
     /**
